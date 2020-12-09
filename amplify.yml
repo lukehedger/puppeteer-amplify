@@ -1,0 +1,21 @@
+version: 1
+frontend:
+  artifacts:
+    baseDirectory: public
+    files:
+      - "index.html"
+  cache:
+    paths:
+      - node_modules/**/*
+  phases:
+    build:
+      commands:
+        - echo build
+test:
+  cache:
+    paths:
+      - node_modules/**/*
+  phases:
+    test:
+      commands:
+        - node puppeteer-test.js
