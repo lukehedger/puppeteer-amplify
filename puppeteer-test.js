@@ -8,6 +8,7 @@ const puppeteer = require("puppeteer");
       "https://donate.cancerresearchuk.org/support-us/your-donation"
     );
     await browser.close();
+    console.log("Done ✨");
   } catch (error) {
     console.error(error);
   }
