@@ -18,6 +18,7 @@ test:
   phases:
     preTest:
       commands:
+        - node -v
         - npm install
     test:
       commands:
