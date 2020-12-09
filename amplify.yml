@@ -16,6 +16,9 @@ test:
     paths:
       - node_modules/**/*
   phases:
+    preTest:
+      commands:
+        - npm install
     test:
       commands:
         - node puppeteer-test.js
